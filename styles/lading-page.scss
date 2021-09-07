@@ -102,7 +102,7 @@
     
             p{
                 font-family: var(--text-font);
-                font-style: 1.6rem;
+                font-size: 1.3rem;
             }
         }
 
@@ -131,9 +131,9 @@
 
     > div{
         display: grid;
-        grid-template-columns: 30vw 30vw;
+        grid-template-columns: 40vw 40vw;
         gap: 1.5rem;
-        padding: 0 calc((40vw - 2rem) / 2);
+        padding: 0 calc((20vw - 2rem) / 2);
 
         div{
             width: auto;
@@ -176,10 +176,10 @@
 }
 
 .lista-completa{
-    width: calc(60vw + 1.5rem);
+    width: calc(80vw + 1.5rem);
     height: 10vh;
     background-color: var(--white);
-    border-radius: 10%;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -211,18 +211,35 @@ form{
 
     h3{
         font-family: var(--title-font);
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin-top: 1.5rem;
     }
 
-    input{
-        width: 100%;
-        height: 2rem;
-        font-family: var(--title-font);
-        font-size: 1.8rem;
-        border-radius: 4px;
-        padding: 0.5rem 0;
-        margin: 1rem 0 1.5rem;
+    div{
+        display: flex;
+
+        input{
+            width: 62vw;
+            height: 4rem;
+            font-family: var(--title-font);
+            font-size: 1.8rem;
+            background-color: var(--white);
+            border-radius: 4px 0 0 4px;
+            padding: 0.5rem 0;
+            margin: 1rem 0 1.5rem;
+        }
+    
+        button{
+            width: 10vw;
+            height: 4rem;
+            background-color: var(--white);
+            border-radius: 0 4px 4px 0;
+            margin-top: 1rem;
+
+            span{
+                padding-top: 0.5rem;
+            }
+        }
     }
 }
 

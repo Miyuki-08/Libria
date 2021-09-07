@@ -89,7 +89,7 @@
 }
 .login-livia > div div p {
   font-family: var(--text-font);
-  font-style: 1.6rem;
+  font-size: 1.3rem;
 }
 .login-livia button {
   width: 60vw;
@@ -110,9 +110,9 @@
 }
 #destaques_do_mes > div, #proximos-lancamentos > div {
   display: grid;
-  grid-template-columns: 30vw 30vw;
+  grid-template-columns: 40vw 40vw;
   gap: 1.5rem;
-  padding: 0 calc((40vw - 2rem) / 2);
+  padding: 0 calc((20vw - 2rem) / 2);
 }
 #destaques_do_mes > div div, #proximos-lancamentos > div div {
   width: auto;
@@ -147,10 +147,10 @@
 }
 
 .lista-completa {
-  width: calc(60vw + 1.5rem);
+  width: calc(80vw + 1.5rem);
   height: 10vh;
   background-color: var(--white);
-  border-radius: 10%;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,17 +180,31 @@ form {
 }
 form h3 {
   font-family: var(--title-font);
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-top: 1.5rem;
 }
-form input {
-  width: 100%;
-  height: 2rem;
+form div {
+  display: flex;
+}
+form div input {
+  width: 62vw;
+  height: 4rem;
   font-family: var(--title-font);
   font-size: 1.8rem;
-  border-radius: 4px;
+  background-color: var(--white);
+  border-radius: 4px 0 0 4px;
   padding: 0.5rem 0;
   margin: 1rem 0 1.5rem;
+}
+form div button {
+  width: 10vw;
+  height: 4rem;
+  background-color: var(--white);
+  border-radius: 0 4px 4px 0;
+  margin-top: 1rem;
+}
+form div button span {
+  padding-top: 0.5rem;
 }
 
 .formas-de-pagamento, .institucional {
