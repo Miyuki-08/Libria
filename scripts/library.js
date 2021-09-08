@@ -12,7 +12,7 @@ books.forEach( (book) => {
     const div_livro = document.createElement('div')
     
     const nomeDoLivro = document.createTextNode(book.nome);
-    const precoDoLivro = document.createTextNode('R$' + book.preco);
+    const precoDoLivro = document.createTextNode('R$' + book.preco.toFixed(2));
     h3.appendChild(nomeDoLivro); 
     h4.appendChild(precoDoLivro);
     
