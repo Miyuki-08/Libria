@@ -1,7 +1,11 @@
 #carrossel {
   position: absolute;
 }
+#carrossel .fora {
+  overflow-x: hidden;
+}
 #carrossel div {
+  display: flex;
   z-index: 1;
 }
 #carrossel div a {
@@ -10,9 +14,8 @@
   width: 100vw;
   height: clamp(180px, 185px, 190px);
   overflow: hidden;
-}
-#carrossel div a:nth-child(2), #carrossel div a:last-child {
-  display: none;
+  animation: Imagem1 5s 3s forwards;
+  animation: Imagem2 10s infinite;
 }
 #carrossel div a img {
   position: absolute;
@@ -32,7 +35,7 @@
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  margin-top: -8.5%;
+  margin-top: -7.5%;
 }
 #carrossel ul li {
   width: 15vw;
@@ -40,6 +43,8 @@
   background-color: var(--white);
   border-radius: 10px;
   z-index: 100;
+  animation-name: carregar;
+  animation-duration: 10s;
 }
 #carrossel ul li a {
   display: block;
@@ -216,13 +221,12 @@ form div button span {
   font-family: var(--title-font);
   font-size: 1.8rem;
   text-align: center;
-  margin-top: 5vh;
+  margin: 5vh 0 1.5rem;
 }
 .formas-de-pagamento .cartoes, .institucional .cartoes {
   width: inherit;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1rem;
 }
 .formas-de-pagamento .cartoes img, .institucional .cartoes img {
   width: 6rem;
