@@ -1,49 +1,19 @@
 @keyframes Imagem1{
     0%{
         left: 0;
-        display: block;
+        // display: block;
     }
     100%{
-        left: -100vw;
-        display: none;
+        left: -110vw;
+        // display: none;
     }
 }
 
-@keyframes Imagem2{
+@keyframes progress{
     0%{
-        left: 0;
-        display: block;
+        width: 0%;
     }
     100%{
-        left: -200vw;
-        display: none;
+        width: 100%;
     }
 }
-
-@keyframes ProximaImagem{
-    0%{
-        display: none;
-        left: 210vw;
-    }
-    1%{
-        display: block;
-    }
-    50%{
-        left: 100vw;
-    }
-    100%{
-        left: -210vw;
-    }
-}
-
-@keyframes carregar{
-    0%{
-        background-color: var(--white);
-    }
-    1%{
-        background-image: linear-gradient(#fff, #C58AEA);
-    }
-    100%{
-        background-image: linear-gradient(90deg,#fff, #C58AEA);
-    }
-} 

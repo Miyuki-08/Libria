@@ -1,55 +1,58 @@
 #carrossel {
-  position: absolute;
-}
-#carrossel .fora {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 #carrossel div {
+  position: relative;
+}
+#carrossel div div {
   display: flex;
   z-index: 1;
 }
-#carrossel div a {
-  display: block;
-  position: relative;
+#carrossel div div a img {
   width: 100vw;
-  height: clamp(180px, 185px, 190px);
-  overflow: hidden;
-  animation: Imagem1 5s 3s forwards;
-  animation: Imagem2 10s infinite;
+  display: block;
 }
-#carrossel div a img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: auto;
-  width: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-#carrossel div a img.carrosselImage {
+#carrossel div div a img.carrosselImage {
   width: 100%;
   height: auto;
 }
-#carrossel ul {
+#carrossel div div a:first-child {
+  animation-name: Imagem1;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+#carrossel div div a:nth-child(2) {
+  animation-name: ProximaImagem;
+  animation-duration: 20s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+#carrossel div ul {
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  margin-top: -7.5%;
+  position: absolute;
+  top: 85%;
 }
-#carrossel ul li {
+#carrossel div ul li {
   width: 15vw;
   height: 2.5vh;
   background-color: var(--white);
   border-radius: 10px;
   z-index: 100;
-  animation-name: carregar;
-  animation-duration: 10s;
 }
-#carrossel ul li a {
+#carrossel div ul li a {
   display: block;
   width: 15vw;
   height: 2.5vh;
+}
+#carrossel div ul li .progress {
+  width: 0%;
+  height: inherit;
+  background-color: var(--lilas-500);
+  border-radius: 10px;
+  display: block;
 }
 
 .login-livia {
@@ -61,7 +64,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: calc(175px + 5vh) auto 0;
+  margin: 5vh auto 0;
 }
 .login-livia > div {
   display: grid;

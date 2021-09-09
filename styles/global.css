@@ -18,7 +18,7 @@
 
 body {
   background-color: #F7F5F8;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 button {
@@ -46,7 +46,7 @@ li {
 
 nav {
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   background-color: var(--white);
   display: flex;
   justify-content: space-around;
