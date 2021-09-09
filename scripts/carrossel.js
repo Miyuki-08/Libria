@@ -1,11 +1,14 @@
 const carrossel = document.getElementById("carrossel");
 
+const div_box = document.createElement('div')
 const ul = document.createElement('ul');
 const div = document.createElement('div');
 
-lista.forEach( (item) => {
+lista.forEach( (item, index) => {
+    
     const li = document.createElement('li');
     const a = document.createElement('a');
+    const span = document.createElement('span')
     const a_imagem = document.createElement('a');
     const img = document.createElement('img');
 
@@ -14,12 +17,18 @@ lista.forEach( (item) => {
     img.src = item.src;
     img.alt = item.alt;
     img.id = item.id;
+    span.id = index + 1 + 'carrossel';
+    span.className = 'progress';
 
+    a_imagem.appendChild( span );
     li.appendChild( a_imagem );
     a.appendChild(img);
     div.appendChild(a);
     ul.appendChild(li);
+
 });
 
-carrossel.appendChild(div);
-carrossel.appendChild(ul);
+div_box.appendChild(ul);
+div_box.appendChild(div)
+
+carrossel.appendChild(div_box);
