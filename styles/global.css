@@ -164,6 +164,7 @@ nav figure svg {
   background-color: #F7F5F8;
   position: absolute;
   top: 0;
+  display: none;
   z-index: 1000;
 }
 #sacola header, #sacolaOpen header {

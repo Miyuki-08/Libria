@@ -16,15 +16,21 @@
   display: block;
 }
 #carrossel div div a:first-child {
-  animation-name: Imagem1;
+  animation-name: ImagemLeft;
   animation-duration: var(--animation-duration);
   animation-delay: var(--animation-delay);
   animation-fill-mode: forwards;
 }
 #carrossel div div a:nth-child(2) {
-  animation-name: Imagem1;
+  animation-name: ImagemLeft;
   animation-duration: var(--animation-duration);
   animation-delay: calc(var(--animation-duration) + (var(--animation-delay) * 2));
+  animation-fill-mode: forwards;
+}
+#carrossel div div a:last-child {
+  animation-name: ImagemRight;
+  animation-duration: var(--animation-duration);
+  animation-delay: var(--animation-delay);
   animation-fill-mode: forwards;
 }
 #carrossel div ul {

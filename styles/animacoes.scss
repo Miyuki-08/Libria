@@ -1,4 +1,4 @@
-@keyframes Imagem1{
+@keyframes ImagemLeft{
     0%{
         margin-left: 0;
         display: block;
@@ -8,6 +8,20 @@
     }
     100%{
         margin-left: -100vw;
+        display: none;
+    }
+}
+
+@keyframes ImagemRight {
+    0%{
+        margin-right: 0;
+        display: block;
+    }
+    99%{
+        display: block;
+    }
+    100%{
+        margin-right: -100vw;
         display: none;
     }
 }
