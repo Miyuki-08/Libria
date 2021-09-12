@@ -1,5 +1,9 @@
 #carrossel{
     overflow: hidden;
+    --animation-delay: 2s;
+    --animation-duration: 5s;
+    --animar: var(--animation-delay) + var(--animation-duration);
+    $Images: 3, 4;
 
     div{
         position: relative;
@@ -8,29 +12,34 @@
             display: flex;
             z-index: 1;
             a{
+
                 img{
                     width: 100vw;
                     display: block; 
                 }
-                
-                img.carrosselImage{
-                    width: 100%;
-                    height: auto;
-                }
     
                 &:first-child{
                     animation-name: Imagem1;
-                    animation-duration: 10s;
-                    animation-delay: 2s;
+                    animation-duration: var(--animation-duration);
+                    animation-delay: var(--animation-delay);
+                    animation-fill-mode: forwards;
+                }
+
+                &:nth-child(2){
+                    animation-name: Imagem1;
+                    animation-duration: var(--animation-duration);
+                    animation-delay: calc(var(--animation-duration) + (var(--animation-delay) * 2));
                     animation-fill-mode: forwards;
                 }
     
-                &:nth-child(2){
-                    animation-name: ProximaImagem;
-                    animation-duration: 20s;
-                    animation-delay: 0s;
-                    animation-fill-mode: forwards;
-                }
+                // @each $Image in $Images {
+                //     &:nth-child(#{$Image}){
+                //         animation-name: Imagem1;
+                //         animation-duration: var(--animation-duration);
+                //         animation-delay: calc(var(--animar) * #{$Image});
+                //         animation-fill-mode: forwards;
+                //     }
+                // }
             }
         }
     

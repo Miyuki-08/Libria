@@ -32,3 +32,9 @@ div_box.appendChild(ul);
 div_box.appendChild(div)
 
 carrossel.appendChild(div_box);
+
+// for (let i = 1; i < lista.length; i++) {
+//     const subtract = Object.keys(lista).length - 1;
+//     const string = subtract.toString()
+//     console.log(string)
+// 

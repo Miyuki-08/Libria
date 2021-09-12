@@ -1,9 +1,14 @@
 @keyframes Imagem1 {
   0% {
-    left: 0;
+    margin-left: 0;
+    display: block;
+  }
+  99% {
+    display: block;
   }
   100% {
-    left: -110vw;
+    margin-left: -100vw;
+    display: none;
   }
 }
 @keyframes progress {
@@ -12,6 +17,38 @@
   }
   100% {
     width: 100%;
+  }
+}
+@keyframes abrirMenu {
+  0% {
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes fecharMenu {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100vw;
+  }
+}
+@keyframes abrirSacola {
+  0% {
+    right: -100vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes fecharSacola {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100vw;
   }
 }
 

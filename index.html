@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="./styles/lading-page.css">
         <title> Libria - Vem sonhar!</title>
     </head>
-    <body>
+    <body id="scrolling">
         <header>
 
             <menu >
@@ -25,16 +25,79 @@
                         <a href="#">Ir para o conteúdo</a>
                     </li>
                     <li>
-                        <a href="#"></a>
+                        <a href="#">Ir para o menu acessibilidade</a>
                     </li>
                 </ul>
             </menu>
 
-            <nav>
+            <nav id="navbar">
                 <menu>
-                    <span class="material-icons">
+                    <span class="material-icons" onclick="abrirMenu()">
                         menu
                     </span>
+
+                    <div id="menu">
+                        <header>
+                            <figure>
+                                <img src="./images/livia-2.png" alt="">
+                            </figure>
+
+                            <div>
+                                <h2>Olá, bem vindo(a)!</h2>
+                            
+                                <a href="">
+                                    <p>Entre ou Cadastre-se</p>
+                                </a>
+                            </div>
+                            
+                            <span class="material-icons" onclick="fecharMenu()">
+                                close
+                            </span>
+                        </header>
+
+                        <section>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <span class="material-icons">
+                                            add_box
+                                        </span>
+
+                                        <p>Mais vendidos</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="material-icons">
+                                            event
+                                        </span>
+
+                                        <p>Próximos lançamentos</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <span class="material-icons">
+                                            description
+                                        </span>
+                                            
+                                        <p>Regulamentos</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="material-icons">
+                                            security
+                                        </span>
+
+                                        <p>Política de privacidade</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
                         
                 </menu>
 
@@ -59,17 +122,36 @@
                     </svg>
                 </figure>
 
-                <div class="sacola">
-                    <span class="material-icons">
+                <div>
+                    <span class="material-icons" onclick="abrirSacola()">
                         shopping_basket
                     </span>
+
+                    <div id="sacola">
+                        <header>
+                            <h3>Minha sacola</h3>
+
+                            <span class="material-icons" onclick="fecharSacola()">
+                                close
+                            </span>
+                        </header>
+
+                        <section>
+                            <span class="material-icons">
+                                shopping_basket
+                            </span>
+
+                            <h5>Sua sacola está vazia!</h5>
+                            <p>Quando você escolher seus produtos, mostraremos aqui todas as suas escolhas.</p>
+                        </section>
+                    </div>
                 </div>
             </nav>
 
         </header>
 
         <section id="carrossel">
-            <div class="fora"></div>
+
         </section>
 
         <section class="login-livia">
@@ -162,6 +244,7 @@
             </small>
         </footer>
 
+        <script src="./scripts/navBar.js"></script>
         <script src="./scripts/publicidade.js"></script>
         <script src="./scripts/carrossel.js"></script>
         <script src="./scripts/books.js"></script>
