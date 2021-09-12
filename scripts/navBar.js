@@ -4,7 +4,7 @@ function abrirMenu() {
     const abrir = document.getElementById('menu');
     abrir.style = 'animation-name: abrirMenu;';
     abrir.id = 'menuOpen';
-    navbar.style = 'overflow-y: hidden;';
+    navbar.style = 'overflow: hidden;';
 }
 
 function fecharMenu() {
@@ -16,9 +16,9 @@ function fecharMenu() {
 
 function abrirSacola() {
     const abrir = document.getElementById('sacola');
-    abrir.style = 'animation-name: abrirSacola;';
+    abrir.style = 'animation-name: abrirSacola; display: block;';
     abrir.id = 'sacolaOpen';
-    navbar.style = 'overflow-y: hidden;';
+    navbar.style = 'overflow: hidden;';
 }
 
 function fecharSacola() {
