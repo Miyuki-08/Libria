@@ -1,39 +1,53 @@
-@keyframes ImagemLeft{
-    0%{
-        margin-left: 0;
-        display: block;
-    }
-    99%{
-        display: block;
-    }
-    100%{
-        margin-left: -100vw;
-        display: none;
-    }
-}
+// @keyframes ImagemLeft{
+//     0%{
+//         margin-left: 0;
+//         display: block;
+//     }
+//     99%{
+//         display: block;
+//     }
+//     100%{
+//         margin-left: -100vw;
+//         display: none;
+//     }
+// }
 
-@keyframes ImagemRight {
-    0%{
-        margin-right: 0;
-        display: block;
-    }
-    99%{
-        display: block;
-    }
-    100%{
-        margin-right: -100vw;
-        display: none;
-    }
-}
+// @keyframes ImagemLeftToRight{
+//     0%{
+//         margin-left: -100vw;
+//         display: block;
+//     }
+//     99%{
+//         display: block;
+//     }
+//     100%{
+//         margin-left: 100vw;
+//         display: none;
+//     }
+// }
 
-@keyframes progress{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 100%;
-    }
-}
+// @keyframes ImagemRight {
+//     0%{
+//         margin-left: 0;
+//         display: block;
+//     }
+//     99%{
+//         display: block;
+//     }
+//     100%{
+//         margin-left: 100vw;
+//         display: none;
+//     }
+// }
+
+// @keyframes progress{
+//     0%{
+//         width: 0%;
+//     }
+//     100%{
+//         width: 100%;
+//     }
+// }
 
 @keyframes abrirMenu{
     0%{

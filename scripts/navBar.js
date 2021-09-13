@@ -16,7 +16,7 @@ function fecharMenu() {
 
 function abrirSacola() {
     const abrir = document.getElementById('sacola');
-    abrir.style = 'animation-name: abrirSacola; display: block;';
+    abrir.style = 'animation-name: abrirSacola;';
     abrir.id = 'sacolaOpen';
     navbar.style = 'overflow: hidden;';
 }

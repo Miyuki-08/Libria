@@ -17,7 +17,6 @@ lista.forEach( (item, index) => {
     img.src = item.src;
     img.alt = item.alt;
     img.id = item.id;
-    span.id = index + 1 + 'carrossel';
     span.className = 'progress';
 
     a_imagem.appendChild( span );
@@ -25,6 +24,8 @@ lista.forEach( (item, index) => {
     a.appendChild(img);
     div.appendChild(a);
     ul.appendChild(li);
+
+    console.log(index)
 
 });
 

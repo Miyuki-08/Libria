@@ -16,5 +16,11 @@ const lista = [
       src: './images/descubra.webp',
       alt: 'Imagem 3',
       link: 'caminho/do/arquivo'
+    },
+    {
+      id: 4,
+      src: './images/descubra.webp',
+      alt: 'Imagem 3',
+      link: 'caminho/do/arquivo'
     }
 ];

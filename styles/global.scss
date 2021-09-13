@@ -173,19 +173,14 @@ nav{
     animation-fill-mode: forwards;
 }
 
-#menuOpen, #sacolaOpen{
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
 #sacola, #sacolaOpen{
     width: 100vw;
     height: 100vh;
     background-color: #F7F5F8;
     position: absolute;
-    top: 0;
     display: none;
-    z-index: 1000; 
+    top: 0;
+    z-index: 1001; 
 
     header{
         width: 100%;
@@ -229,6 +224,11 @@ nav{
             margin: 1vh 1rem;
         }
     }
+}
+
+#menuOpen, #sacolaOpen{
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 #sacola{
