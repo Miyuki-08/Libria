@@ -16,14 +16,18 @@ function fecharMenu() {
 
 function abrirSacola() {
     const abrir = document.getElementById('sacola');
-    abrir.style = 'animation-name: abrirSacola;';
-    abrir.id = 'sacolaOpen';
+    abrir.classList.remove('close');
+    abrir.classList.add('open');
     navbar.style = 'overflow: hidden;';
 }
 
 function fecharSacola() {
-    const fechar = document.getElementById('sacolaOpen');
-    fechar.style = 'animation-name: fecharSacola;';
-    fechar.id = 'sacola';
+    const fechar = document.getElementById('sacola');
+    fechar.classList.remove('open');
+    fechar.classList.add('closing');
+    setTimeout(() => {
+        fechar.classList.remove('closing');
+        fechar.classList.add('close');        
+    }, 1000);
     navbar.style = 'overflow-y: scroll;';
 }
