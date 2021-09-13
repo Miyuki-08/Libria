@@ -155,11 +155,12 @@ nav figure svg {
 
 #sacola {
   right: -100vw;
+  display: none;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-#sacola, #sacolaOpen {
+#sacola {
   width: 100vw;
   height: 100vh;
   background-color: #F7F5F8;
@@ -167,7 +168,7 @@ nav figure svg {
   top: 0;
   z-index: 1001;
 }
-#sacola header, #sacolaOpen header {
+#sacola header {
   width: 100%;
   height: 15vh;
   display: flex;
@@ -175,29 +176,29 @@ nav figure svg {
   align-items: center;
   background-color: var(--lilas-300);
 }
-#sacola header h3, #sacolaOpen header h3 {
+#sacola header h3 {
   font-family: var(--title-font);
   font-size: 2.1rem;
 }
-#sacola header span, #sacolaOpen header span {
+#sacola header span {
   font-size: 3rem;
 }
-#sacola section, #sacolaOpen section {
+#sacola section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#sacola section span, #sacolaOpen section span {
+#sacola section span {
   font-size: 10rem;
   color: var(--lilas-800);
   margin-top: 10vh;
 }
-#sacola section h5, #sacolaOpen section h5 {
+#sacola section h5 {
   font-family: var(--text-font);
   font-size: 2rem;
   margin-top: 3vh;
 }
-#sacola section p, #sacolaOpen section p {
+#sacola section p {
   font-family: var(--text-font);
   font-weight: bold;
   font-size: 1.6rem;
@@ -205,9 +206,25 @@ nav figure svg {
   margin: 1vh 1rem;
 }
 
-#menuOpen, #sacolaOpen {
+#menuOpen {
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+#sacola.open {
+  animation-name: abrirSacola;
+  display: block;
+}
+
+#sacola.closing {
+  animation-name: fecharSacola;
+  animation-duration: 1000ms;
+  display: block;
+}
+
+#sacola.close {
+  animation-name: fecharSacola;
+  display: none;
 }
 
 /*# sourceMappingURL=global.css.map */

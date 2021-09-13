@@ -176,17 +176,17 @@ nav{
 
 #sacola{
     right: -100vw;
+    display: none;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
 
-#sacola, #sacolaOpen{
+#sacola{
     width: 100vw;
     height: 100vh;
     background-color: #F7F5F8;
     position: absolute;
-    // display: none;
     top: 0;
     z-index: 1001; 
 
@@ -234,7 +234,23 @@ nav{
     }
 }
 
-#menuOpen, #sacolaOpen{
+#menuOpen{
     animation-duration: 1s;
     animation-fill-mode: forwards;
+}
+
+#sacola.open{
+    animation-name: abrirSacola;
+    display: block;
+}
+
+#sacola.closing{
+    animation-name: fecharSacola;
+    animation-duration: 1000ms;
+    display: block;
+}
+
+#sacola.close{
+    animation-name: fecharSacola;
+    display: none;
 }
