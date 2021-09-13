@@ -81,10 +81,8 @@
 @keyframes fecharSacola {
     0%{
         right: 0;
-        display: block;
     }
     100%{
         right: -100vw;
-        display: none;
     }
 }

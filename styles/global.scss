@@ -176,10 +176,8 @@ nav{
 
 #sacola{
     right: -100vw;
-    display: none;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    z-index: 10;
 }
 
 
@@ -188,6 +186,7 @@ nav{
     height: 100vh;
     background-color: #F7F5F8;
     position: absolute;
+    // display: none;
     top: 0;
     z-index: 1001; 
 
@@ -238,7 +237,4 @@ nav{
 #menuOpen, #sacolaOpen{
     animation-duration: 1s;
     animation-fill-mode: forwards;
-}
-#sacolaOpen{
-    display: block;
 }

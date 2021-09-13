@@ -155,10 +155,8 @@ nav figure svg {
 
 #sacola {
   right: -100vw;
-  display: none;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  z-index: 10;
 }
 
 #sacola, #sacolaOpen {
@@ -210,10 +208,6 @@ nav figure svg {
 #menuOpen, #sacolaOpen {
   animation-duration: 1s;
   animation-fill-mode: forwards;
-}
-
-#sacolaOpen {
-  display: block;
 }
 
 /*# sourceMappingURL=global.css.map */
