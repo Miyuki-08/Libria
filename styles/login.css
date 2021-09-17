@@ -1,9 +1,10 @@
 main {
   width: 80vw;
-  height: 80vh;
-  border-radius: 13px;
+  height: auto;
+  border-radius: 13px 13px 0 0;
   background-color: var(--white);
   margin: 5vh auto;
+  position: relative;
 }
 main > * {
   padding: 0 2rem;
@@ -12,9 +13,6 @@ main h1 {
   font-family: var(--title-font);
   font-size: 2.3rem;
   padding-top: 1rem;
-}
-main section form {
-  background-color: var(--lilas-300);
 }
 main section form > * {
   margin-top: 2rem;
@@ -47,19 +45,43 @@ main section form button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--lilas-300);
+  background-color: var(--lilas-500);
   border-radius: 5px;
   font-size: 1.8rem;
   font-family: var(--title-font);
+}
+main section {
+  width: 80vw;
+}
+main section.cadastrar {
+  position: absolute;
+  background-color: var(--white);
+  top: 100%;
+  z-index: 10;
+}
+main section.login {
+  padding: 0 2rem;
+  background-color: var(--lilas-100);
+  border-top: 1px solid var(--lilas-100);
+  border-radius: 13px 13px 0 0;
+  margin-top: 1rem;
+  position: absolute;
+  top: 210%;
+  z-index: 100;
 }
 main p {
   font-family: var(--text-font);
   font-weight: bold;
   font-size: 1.5rem;
-  margin-top: 3rem;
+  padding: 3rem 2rem;
+  background-color: var(--lilas-100);
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 700%;
 }
 main p a {
   text-decoration: underline;
+  color: var(--black);
 }
 
 /*# sourceMappingURL=login.css.map */

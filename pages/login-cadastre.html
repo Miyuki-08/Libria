@@ -29,7 +29,7 @@
             </menu>
 
             <nav id="nav-login">
-                <button onclick="history()">
+                <button onclick="history.back()">
                     <span class="material-icons">
                         arrow_back_ios
                     </span>
@@ -67,20 +67,27 @@
                         <input type="checkbox">
                         <h2>Cadastrar-se</h2>
                     </div>
+
+                    <input type="email" placeholder="Nome do responsável">
+
+                    <button>
+                        Continue
+                    </button>
                 </form>
             </section>
 
             <section class="login">
                 <form action="">
                     <div>
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <h2>Login</h2>
                     </div>
 
                     <input type="email" placeholder="Email do responsável">
+                    <input type="password" placeholder="Senha">
 
                     <button>
-                        Continuar
+                        Entre
                     </button>
                 </form>
             </section>
