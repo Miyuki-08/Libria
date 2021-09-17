@@ -1,36 +1,3 @@
-@keyframes abrirMenu {
-  0% {
-    left: -100vw;
-  }
-  100% {
-    left: 0;
-  }
-}
-@keyframes fecharMenu {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100vw;
-  }
-}
-@keyframes abrirSacola {
-  0% {
-    right: -100vw;
-    display: none;
-  }
-  100% {
-    right: 0;
-    display: block;
-  }
-}
-@keyframes fecharSacola {
-  0% {
-    right: 0;
-  }
-  100% {
-    right: -100vw;
-  }
-}
+
 
 /*# sourceMappingURL=animacoes.css.map */

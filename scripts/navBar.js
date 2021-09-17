@@ -31,3 +31,4 @@ function fecharSacola() {
     }, 1000);
     navbar.style = 'overflow-y: scroll;';
 }
+

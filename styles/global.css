@@ -37,6 +37,38 @@ li {
   list-style: none;
 }
 
+@keyframes abrirMenu {
+  0% {
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes fecharMenu {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100vw;
+  }
+}
+@keyframes abrirSacola {
+  0% {
+    right: -100vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes fecharSacola {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100vw;
+  }
+}
 .menu-tab {
   display: flex;
   position: absolute;
@@ -72,6 +104,32 @@ nav figure svg {
   width: auto;
   height: 8vh;
   margin: 1vh 0;
+}
+
+#nav-login {
+  display: block;
+  position: relative;
+}
+#nav-login button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+#nav-login button span {
+  font-size: 3rem;
+  color: var(--lilas-500);
+}
+#nav-login a {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #menu, #menuOpen {
