@@ -25,8 +25,6 @@ lista.forEach( (item, index) => {
     div.appendChild(a);
     ul.appendChild(li);
 
-    console.log(index)
-
 });
 
 div_box.appendChild(ul);

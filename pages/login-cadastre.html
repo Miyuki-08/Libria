@@ -61,10 +61,10 @@
 
         <main>
             <h1>Seja bem vindo(a)!</h1>
-            <section class="cadastrar">
+            <section id="cadastrar">
                 <form action="">
                     <div>
-                        <input type="checkbox">
+                        <input id="input-cadastrar" type="checkbox" onclick="checkCadastrar()">
                         <h2>Cadastrar-se</h2>
                     </div>
 
@@ -76,10 +76,10 @@
                 </form>
             </section>
 
-            <section class="login">
+            <section id="login" class="login-check">
                 <form action="">
                     <div>
-                        <input type="checkbox" checked>
+                        <input id="input-login" type="checkbox" onclick="checkLogin()" checked>
                         <h2>Login</h2>
                     </div>
 
@@ -92,11 +92,13 @@
                 </form>
             </section>
 
-            <p>
+            <p id="condicoes" class="habilitado">
                 Ao continuar, você concorda com as 
                 <a href="">condições de uso</a>
                 da Libria.
             </p>
         </main>
+
+        <script src="../scripts/login-cadastrar.js"></script>
     </body>
 </html>

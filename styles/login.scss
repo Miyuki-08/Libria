@@ -66,23 +66,42 @@ main{
     section{
 
         width: 80vw;
+        position: absolute;
+        padding: 0 2rem;
         
-        &.cadastrar{
-            position: absolute;
+        &#cadastrar{
+            padding-bottom: 2rem;
             background-color: var(--white);
             top: 100%;
+            // z-index: 20;
+            z-index: 5;
+        }
+
+        &#login{
+            margin-top: 1rem;
             z-index: 10;
         }
 
-        &.login{
-            padding: 0 2rem;
+        &.login-check{
             background-color: var(--lilas-100);
-            border-top: 1px solid var(--lilas-100);
             border-radius: 13px 13px 0 0;
-            margin-top: 1rem;
-            position: absolute;
             top: 210%;
-            z-index: 100;
+
+            button{
+                margin-bottom: 2rem;
+            }
+        }
+
+        &.login-desabilitado{
+            background-color: var(--white);
+            border-radius: 0 0 13px 13px;
+            top: 450%;
+
+            button{
+                background-color: transparent;
+                color: transparent;
+                
+            }
         }
 
     }
@@ -95,14 +114,24 @@ main{
         font-weight: bold;
         font-size: 1.5rem;
         padding: 3rem 2rem;
-        background-color: var(--lilas-100);
         border-radius: 0 0 10px 10px;
         position: absolute;
-        top: 700%;
+        z-index: 15;
 
         a{
             text-decoration: underline;
             color: var(--black);
         }
+
+        &.habilitado{
+            background-color: var(--lilas-100);
+            top: 750%;
+        }
+
+        &.desabilitado{
+            background-color: var(--white);
+            top: 600%;
+        }
     }
 }
+

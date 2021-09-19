@@ -52,36 +52,56 @@ main section form button {
 }
 main section {
   width: 80vw;
-}
-main section.cadastrar {
   position: absolute;
+  padding: 0 2rem;
+}
+main section#cadastrar {
+  padding-bottom: 2rem;
   background-color: var(--white);
   top: 100%;
+  z-index: 5;
+}
+main section#login {
+  margin-top: 1rem;
   z-index: 10;
 }
-main section.login {
-  padding: 0 2rem;
+main section.login-check {
   background-color: var(--lilas-100);
-  border-top: 1px solid var(--lilas-100);
   border-radius: 13px 13px 0 0;
-  margin-top: 1rem;
-  position: absolute;
   top: 210%;
-  z-index: 100;
+}
+main section.login-check button {
+  margin-bottom: 2rem;
+}
+main section.login-desabilitado {
+  background-color: var(--white);
+  border-radius: 0 0 13px 13px;
+  top: 450%;
+}
+main section.login-desabilitado button {
+  background-color: transparent;
+  color: transparent;
 }
 main p {
   font-family: var(--text-font);
   font-weight: bold;
   font-size: 1.5rem;
   padding: 3rem 2rem;
-  background-color: var(--lilas-100);
   border-radius: 0 0 10px 10px;
   position: absolute;
-  top: 700%;
+  z-index: 15;
 }
 main p a {
   text-decoration: underline;
   color: var(--black);
+}
+main p.habilitado {
+  background-color: var(--lilas-100);
+  top: 750%;
+}
+main p.desabilitado {
+  background-color: var(--white);
+  top: 600%;
 }
 
 /*# sourceMappingURL=login.css.map */
