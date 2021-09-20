@@ -9,11 +9,11 @@ const tituloLivro = document.createTextNode(books.at(edicaoDaHistoria).nome);
 titulo.appendChild(tituloLivro);
 
 const preco = document.getElementById('preco');
-const precoLivro = document.createTextNode(books.at(edicaoDaHistoria).preco.toFixed(2));
-const precoDoLivro = document.createTextNode ('R$' + books.at(edicaoDaHistoria).preco.toFixed(2))
+const precoLivro = books.at(edicaoDaHistoria).preco.toFixed(2);
+const precoDoLivro = document.createTextNode ('R$' + precoLivro)
 preco.appendChild(precoDoLivro);
 
-    if (precoLivro == '0.00') {
+    if (precoLivro == 0.00) {
         const gratis = document.createTextNode('Grátis !')
         preco.innerText = "";
         preco.appendChild(gratis);

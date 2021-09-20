@@ -156,7 +156,7 @@
   margin-bottom: 2rem;
 }
 
-.lista-completa {
+.lista-completa a {
   width: calc(80vw + 1.5rem);
   height: 10vh;
   background-color: var(--white);
@@ -165,13 +165,14 @@
   justify-content: space-between;
   align-items: center;
   margin: 2rem auto 0;
+  color: var(--black);
 }
-.lista-completa p {
+.lista-completa a p {
   font-family: var(--title-font);
   font-size: 1.8rem;
   padding-left: 1.5rem;
 }
-.lista-completa span {
+.lista-completa a span {
   padding-right: 2rem;
 }
 

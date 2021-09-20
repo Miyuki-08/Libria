@@ -196,7 +196,7 @@
 
 }
 
-.lista-completa{
+.lista-completa a{
     width: calc(80vw + 1.5rem);
     height: 10vh;
     background-color: var(--white);
@@ -205,6 +205,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 2rem auto 0;
+    color: var(--black);
 
     p{
         font-family: var(--title-font);
