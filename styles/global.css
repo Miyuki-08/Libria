@@ -101,7 +101,7 @@ nav menu, nav > div {
 nav menu > span {
   font-weight: bold !important;
 }
-nav figure svg {
+nav a figure svg {
   width: auto;
   height: 8vh;
   margin: 1vh 0;
@@ -284,6 +284,64 @@ nav figure svg {
 #sacola.close {
   animation-name: fecharSacola;
   display: none;
+}
+
+.formas-de-pagamento, .institucional {
+  width: 80vw;
+  height: 20vh;
+  margin: 0 10vw;
+}
+.formas-de-pagamento h3, .institucional h3 {
+  font-family: var(--title-font);
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 5vh 0 1.5rem;
+}
+.formas-de-pagamento .cartoes, .institucional .cartoes {
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+}
+.formas-de-pagamento .cartoes img, .institucional .cartoes img {
+  width: 6rem;
+  height: auto;
+  margin: 1rem 1rem 0;
+}
+.formas-de-pagamento ul li, .institucional ul li {
+  margin-top: 1rem;
+}
+.formas-de-pagamento ul li a, .institucional ul li a {
+  font-family: var(--title-font);
+  font-size: 1.8rem;
+  text-decoration: underline;
+  color: var(--black);
+}
+
+footer {
+  width: 100vw;
+  height: auto;
+  background-color: var(--lilas-500);
+  margin-top: 5vh;
+}
+footer h1 {
+  font-family: var(--title-font);
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+footer small {
+  display: flex;
+  justify-content: center;
+}
+footer small span {
+  font-family: var(--title-font);
+  color: var(--black);
+}
+footer small span:first-child {
+  font-size: 1rem;
+}
+footer small span:last-child {
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=global.css.map */

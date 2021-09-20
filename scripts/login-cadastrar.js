@@ -4,7 +4,6 @@ const sectionLogin = document.getElementById('login');
 const condicoes = document.getElementById('condicoes');
 
 function checkLogin() {
-    const sectionCadastrar = document.getElementById('cadastrar');
 
     if (login.checked == false) {
         sectionLogin.classList.remove('login-check');

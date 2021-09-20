@@ -22,7 +22,7 @@ books.forEach( (book) => {
             h4.appendChild(gratis);
         }
     
-    a.href = book.capa;
+    a.href = "./pages/book.html";
     img.src = book.capa;
     img.alt = book.nome;
     div_livro.id = book.nome;

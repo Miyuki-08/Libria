@@ -2,17 +2,19 @@ main{
     width: 80%;
     height: auto;
     background-color: var(--white);
+    border-radius: 10px;
     margin: 2rem auto 0;
 
-    > div{
+    > div:first-child{
         width: 100%;
         position: relative;
 
         figure img{
-            width: 100%;
+            width: 60%;
+            margin: 0 20%;
         }
 
-        div{
+        button{
             width: 4rem;
             height: 4rem;
             border-radius: 50%;
@@ -22,11 +24,11 @@ main{
             align-items: center;
             justify-content: center;
             position: absolute;
-            top: 10%;
+            top: 5%;
             right: .5rem;
             
             span{
-                font-size: 1.5rem;
+                color: var(--lilas-800);
             }
 
             &#share{
@@ -65,8 +67,81 @@ main{
             &:last-child{
                 background-color: var(--white);
                 border: 2px solid var(--lilas-500);
-                margin-top: 1.5rem;
+                margin: 1.5rem 0 3rem;
             }
         }
     }
+
+    > div:last-child button,
+    > div:nth-of-type(2) button{
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--white);
+        padding: 0 2rem;
+
+        p{
+            font-family: var(--title-font);
+            font-size: 1.8rem;
+        }
+
+        span{
+            color: var(--black);
+            transform: rotate(90deg);
+        }
+    }
+
+    > div:nth-of-type(2){
+        position: relative;
+    }
+
+    > div:last-child{
+        padding-bottom: 2rem;
+    }
+
+    #descricao{
+        width: 100%;
+        background-color: white;
+        font-family: var(--title-font);
+        font-size: 1.8rem;
+        padding: 0 2rem;
+        margin: 2rem 0;
+    }
+}
+
+table{
+    width: calc(100% - 4rem);
+    margin: 2rem;
+    border-collapse: collapse;
+    display: none;
+
+    tr{
+        border: 1px solid var(--black);
+        border-radius: 5px;
+        
+        td{
+            font-family: var(--title-font);
+            font-size: 1.8rem;
+            text-align: start;
+            padding-left: 2rem;
+        }
+    }
+
+    tr, td{
+        padding: 1.5rem 0;
+    }
+}
+
+.aberto{
+    display: block;
+}
+
+.aberta{
+    display: table;
+}
+
+.fechado{
+    display: none;
 }
