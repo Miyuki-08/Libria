@@ -1,5 +1,7 @@
 const estante = document.getElementById("destaques_do_mes");
-const lancamento = document.getElementById("proximos-lancamentos")
+const lancamento = document.getElementById("proximos-lancamentos");
+const destaques = document.getElementById('destaquesDoMes');
+const proximos = document.getElementById('proximosLancamentos');
 
 const div_container = document.createElement('div')
 
@@ -36,3 +38,5 @@ books.forEach( (book) => {
 
 estante.appendChild(div_container.cloneNode(true));
 lancamento.appendChild(div_container.cloneNode(true));
+destaques.appendChild(div_container.cloneNode(true));
+proximos.appendChild(div_container.cloneNode(true));
