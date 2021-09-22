@@ -1,15 +1,15 @@
 const produtoUm = 0;
 
 const itemUm = document.getElementById('itemUm');
-itemUm.src = '.' + books.at(produtoUm).capa;
-itemUm.alt = books.at(produtoUm).nome;
+itemUm.src = '.' + books[produtoUm].capa;
+itemUm.alt = books[produtoUm].nome;
 
 const nomeItemUm = document.getElementById('nomeItemUm');
-const itemNomeUm = document.createTextNode(books.at(produtoUm).nome);
+const itemNomeUm = document.createTextNode(books[produtoUm].nome);
 nomeItemUm.appendChild(itemNomeUm);
 
 const totalItemUm = document.getElementById('totalItemUm');
-const itemUmTotal = books.at(produtoUm).preco;
+const itemUmTotal = books[produtoUm].preco;
 const itemTotalUm = document.createTextNode(itemUmTotal.toFixed(2));
 totalItemUm.appendChild(itemTotalUm);
 
@@ -17,15 +17,15 @@ totalItemUm.appendChild(itemTotalUm);
 const produtoDois = 3;
 
 const itemDois = document.getElementById('itemDois');
-itemDois.src = '.' + books.at(produtoDois).capa;
-itemDois.alt = books.at(produtoDois).nome;
+itemDois.src = '.' + books[produtoDois].capa;
+itemDois.alt = books[produtoDois].nome;
 
 const nomeItemDois = document.getElementById('nomeItemDois');
-const itemNomeDois = document.createTextNode(books.at(produtoDois).nome);
+const itemNomeDois = document.createTextNode(books[produtoDois].nome);
 nomeItemDois.appendChild(itemNomeDois);
 
 const totalItemDois = document.getElementById('totalItemDois');
-const itemDoisTotal = books.at(produtoDois).preco;
+const itemDoisTotal = books[produtoDois].preco;
 const itemTotalDois = document.createTextNode(itemDoisTotal.toFixed(2));
 totalItemDois.appendChild(itemTotalDois);
 
