@@ -1,11 +1,11 @@
-const estante = document.getElementById("destaques_do_mes");
-const lancamento = document.getElementById("proximos-lancamentos");
+const estante = document.getElementById("destaquesDoMes");
+const lancamento = document.getElementById("proximosLancamentos");
 
-const div_container = document.createElement('div')
+const div_container = document.createElement('div');
 
 // lista de lançamentos
 const proximos_lancamentos = books.filter((book) => {
-  return book.lancado == false;
+  return book.lancado ==  false;
 })
 
 // livros já lançados
@@ -32,8 +32,8 @@ const render = (book) => {
   // Operador Ternário
   preco.innerText = book.preco == 0 ? 'Grátis !' : `R$ ${book.preco.toFixed(2)}`;
 
-  link.href = "./pages/book.html";
-  img.src = book.capa;
+  link.href = "../pages/book.html";
+  img.src = '.' + book.capa;
   img.alt = book.nome;
   div_livro.id = book.nome.replace(/\s+/g, '-').toLowerCase(); // Os Tres Porquinhos => os-tres-porquinhos
 
@@ -47,7 +47,10 @@ const render = (book) => {
 proximos_lancamentos.forEach((book) => {
   render(book);
 });
-lancamento.appendChild(div_container.cloneNode(true));
+
+if (lancamento) {
+    lancamento.appendChild(div_container.cloneNode(true));
+}
 
 // limpar container para adicionar novos livros
 div_container.innerHTML = "";
@@ -55,4 +58,7 @@ div_container.innerHTML = "";
 destaques.forEach((book) => {
   render(book);
 });
-estante.appendChild(div_container.cloneNode(true));
+
+if (estante) {
+    estante.appendChild(div_container.cloneNode(true));
+}
