@@ -4,40 +4,40 @@ main h1 {
   text-align: center;
   margin: 5rem 0 3rem;
 }
-main section {
+main section > div {
   display: grid;
   grid-template-columns: 40vw 40vw;
   gap: 1.5rem;
   padding: 0 calc((20vw - 2rem) / 2);
 }
-main section div {
+main section > div div {
   width: auto;
   height: auto;
   background-color: var(--white);
   border-radius: 10px;
 }
-main section div a {
+main section > div div a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
 }
-main section div a img {
+main section > div div a img {
   width: auto;
   max-height: 30vh;
   margin: 2rem 20% 0;
 }
-main section div a h3, main section div a h4 {
+main section > div div a h3, main section > div div a h4 {
   text-align: center;
   font-family: var(--title-font);
   font-size: 1.8rem;
   margin-top: 2rem;
 }
-main section div a h3 {
+main section > div div a h3 {
   color: var(--black);
   height: 3rem;
 }
-main section div a h4 {
+main section > div div a h4 {
   color: var(--lilas-500);
   margin-bottom: 2rem;
 }
