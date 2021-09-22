@@ -1,5 +1,6 @@
 const books = [
     {
+        id: 1,
         nome:'Os três Porquinhos',
         autor: 'Fulano',
         ano: 2021,
@@ -14,6 +15,7 @@ const books = [
         sinopse: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nemo accusamus dicta dignissimos neque illum repellendus quo? Unde eaque consequatur neque eos, est, repellendus id harum ipsa nulla cumque ad?'
     },
     {
+        id: 2,
         nome:'Chapeuzinho Vermelho',
         autor: 'Fulano',
         ano: 2021,
@@ -21,13 +23,14 @@ const books = [
         legendas: 'Português',
         interpretacao: 'Libras',
         tempo: '00:03:50' ,
-        capa: './images/book_1.png',
+        capa: './images/book_2.png',
         preco: 8.40,
         lancado: true,
         lancamento: '07-08-2021',
         sinopse: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nemo accusamus dicta dignissimos neque illum repellendus quo? Unde eaque consequatur neque eos, est, repellendus id harum ipsa nulla cumque ad?'       
     },
     {
+        id: 3,
         nome:'João e Maria',
         autor: 'Fulano',
         ano: 2021,
@@ -42,6 +45,7 @@ const books = [
         sinopse: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nemo accusamus dicta dignissimos neque illum repellendus quo? Unde eaque consequatur neque eos, est, repellendus id harum ipsa nulla cumque ad?'
     },
     {
+        id: 4,
         nome:'A Lebre e a Tartaruga',
         autor: 'Fulano',
         ano: 2021,
@@ -54,6 +58,6 @@ const books = [
         lancado: false,
         lancamento: '12-30-2021',
         sinopse: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nemo accusamus dicta dignissimos neque illum repellendus quo? Unde eaque consequatur neque eos, est, repellendus id harum ipsa nulla cumque ad?'
-    },
+    }
 ];
 
