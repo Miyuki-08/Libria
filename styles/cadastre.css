@@ -1,0 +1,109 @@
+section {
+  width: 100%;
+  padding: 2rem 5% 0;
+}
+section ol {
+  display: grid;
+  grid-template-columns: 30% 5% 30% 5% 30%;
+}
+section ol li {
+  text-align: center;
+  align-self: center;
+}
+section ol li:first-child, section ol li:last-child {
+  width: 100%;
+}
+section ol li:nth-of-type(2) a, section ol li:last-child a {
+  color: #7b7b7b;
+}
+section ol li a {
+  font-family: var(--title-font);
+  font-size: 1.6rem;
+  color: var(--black);
+}
+section ol span {
+  align-self: center;
+  justify-self: center;
+  font-family: var(--title-font);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+main {
+  width: 80%;
+  height: auto;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin: 2rem 10% 0;
+  padding: 2rem;
+}
+main h2 {
+  width: 100%;
+  font-family: var(--title-font);
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+}
+main form label, main form input {
+  font-family: var(--title-font);
+}
+main form label {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+main form > input {
+  font-size: 2rem;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+main form > div {
+  display: flex;
+  justify-content: space-around;
+}
+main form > div select:first-child {
+  width: 40%;
+}
+main form > div select:last-child {
+  width: 45%;
+  margin-left: 7%;
+}
+main form .emails, main form .termos {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+main form .emails > input, main form .termos > input {
+  width: 2rem;
+  height: 2rem;
+}
+main form .emails > span, main form .emails > a, main form .termos > span, main form .termos > a {
+  width: 85%;
+  font-family: var(--title-font);
+  font-size: 1.6rem;
+  margin-left: 2rem;
+}
+main form .emails > a, main form .termos > a {
+  text-decoration: underline;
+}
+main form .emails {
+  margin-bottom: 1.5rem;
+}
+main form > a, main form button {
+  width: 100%;
+  background-color: var(--lilas-500);
+  font-family: var(--title-font);
+  font-size: 2rem;
+  color: var(--black);
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+/*# sourceMappingURL=cadastre.css.map */
