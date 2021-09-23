@@ -65,7 +65,9 @@ main{
         }
 
         > input{
+            width: 100%;
             font-size: 2rem;
+            background-color: var(--white);
             border: 1px solid var(--black);
             border-radius: 10px;
             margin-bottom: 2rem;

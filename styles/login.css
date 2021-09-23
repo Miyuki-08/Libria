@@ -41,7 +41,7 @@ main section form > input {
 }
 main section form > a, main section form button {
   width: 100%;
-  height: 2.7rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
