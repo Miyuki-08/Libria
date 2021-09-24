@@ -1,0 +1,41 @@
+main{
+    width: 80%;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin: 4rem 10%;
+
+    h2{
+        font-family: var(--title-font);
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 3rem 0;
+    }
+}
+
+
+#livros > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 0 calc((20vw - 2rem) / 2);
+
+    > div a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--black);
+
+        img{
+            width: 80%;
+        }
+
+        h3{
+            font-family: var(--title-font);
+            font-size: 1.6rem;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    }
+}

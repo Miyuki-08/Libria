@@ -1,0 +1,15 @@
+Body > section {
+  width: 80%;
+  height: auto;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin: 3rem 10% 1rem;
+}
+Body > section h2 {
+  font-family: var(--title-font);
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/*# sourceMappingURL=historico.css.map */
