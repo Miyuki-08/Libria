@@ -4,7 +4,6 @@ section{
 
     ol{
         display: grid;
-        grid-template-columns: 30% 5% 30% 5% 30%;
 
         li{
             text-align: center;
@@ -14,11 +13,12 @@ section{
                 width: 100%;
             }
 
-            &:nth-of-type(2) a, &:last-child a{
+            &:nth-of-type(2) a, &:nth-of-type(3) a, &:last-child a{
                 color: #7b7b7b;
             }
 
             a{
+                width: 100%;
                 font-family: var(--title-font);
                 font-size: 1.6rem;
                 color: var(--black);
@@ -32,6 +32,18 @@ section{
             font-size: 2rem;
             font-weight: bold;
         }
+    }
+
+    #cadastre{
+        grid-template-columns: 21.25% 5% 21.25% 5% 21.25% 5% 21.25%;
+
+        a{
+            font-size: 1rem;
+        }
+    }
+
+    #navegacao{
+        grid-template-columns: 30% 5% 30% 5% 30%;
     }
 }
 
@@ -79,12 +91,16 @@ main{
             justify-content: space-around;
 
             select{
+                background-color: var(--lilas-500);
+                border-radius: 3px;
+                
                 &:first-child{
                     width: 40%;
                 }
 
                 &:last-child{
                     width: 45%;
+                    color: var(--black);
                     margin-left: 7%;
                 }
             } 

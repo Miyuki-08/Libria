@@ -9,8 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/global.css">
-        <link rel="stylesheet" href="../styles/cadastre.css">
-        <title>Cadastre-se na Libria!</title>
+        <title>Confirme sua conta</title>
     </head>
     <body>
         <header>
@@ -44,7 +43,7 @@
                             <div>
                                 <h2>Olá, bem vindo(a)!</h2>
                             
-                                <a href="../pages/login-cadastre.html">
+                                <a href="./pages/login-cadastre.html">
                                     <p>Entre ou Cadastre-se</p>
                                 </a>
                             </div>
@@ -123,8 +122,8 @@
                 </figure>
                 </a>
 
-                <div>
-                    <span class="material-icons" onclick="abrirSacola()">
+                <div class="transparent">
+                    <span class="material-icons" onclick="">
                         shopping_basket
                     </span>
 
@@ -132,7 +131,7 @@
                         <header>
                             <h3>Minha sacola</h3>
 
-                            <span class="material-icons" onclick="fecharSacola()">
+                            <span class="material-icons" onclick="">
                                 close
                             </span>
                         </header>
@@ -151,62 +150,63 @@
 
         </header>
 
-        <section>
-            <ol id="navegacao">
-                <li><a href="#">Dados do responsável</a></li>
-                <span>></span>
-                <li><a>Dados da criança</a></li>
-                <span>></span>
-                <li><a>Detalhes da conta</a></li>
-            </ol>
-        </section>
-
         <main>
+            <section class="cheia">
+                <div class="produtos">
+                    <div id="produtoUm">
+                        <div>
+                            <img id="itemUm">
+                            <h4 id="nomeItemUm"></h4>
+                            <button>
+                                <span class="material-icons">
+                                    delete
+                                </span>
+                            </button>
+                        </div>
+                        <div>
+                            <div>
+                                <p>Quantidade:</p>
+                                <input value="1" id="valueProdutoUm" disabled>
+                            </div>
+                            <p id="totalItemUm"></p>
+                        </div>
+                    </div>
 
-            <h2>Dados do responsável</h2>
+                    <hr>
 
-            <form action="">
-                <label>Nome do responsável:</label>
-                <input type="text" required>
-
-                <label>Data de nascimento do responsável:</label>
-                <input type="date" required>
-
-                <label>Email do responsável:</label>
-                <input type="email" required>
-
-                <label>Selecione:</label>
-                <div>
-                    <select required>
-                        <option>PcD</option>
-                        <option selected >Sem deficiência</option>
-                    </select>
-    
-                    <!-- SE O SELECT ACIMA FOR IGUAL A PCD OU SE PCD FOR TRUE -->
-                    <select disabled>
-                        <option>Deficiência auditiva</option>
-                        <option>Deficiência visual</option>
-                        <option>Deficiência física</option>
-                        <option>Deficiência cognitiva</option>
-                        <option>Deficiência neural</option>
-                        <option>Deficiência de aprendizagem</option>
-                    </select>
+                    <div id="produtoDois">
+                        <div>
+                            <img id="itemDois">
+                            <h4 id="nomeItemDois"></h4>
+                            <button>
+                                <span class="material-icons">
+                                    delete
+                                </span>
+                            </button>
+                        </div>
+                        <div>
+                            <div>
+                                <p>Quantidade:</p>
+                                <input value="1" id="valueProdutoDois" disabled>
+                            </div>
+                            <p id="totalItemDois"></p>
+                        </div>
+                    </div>
                 </div>
 
-                <a href="../pages/cadastre-crianca.html"> Próximo </a>
-            </form>
+                <div>
+                    <p>Subtotal</p>
+                    <p id="itens"></p>
+                    <p id="total"></p>
+                </div>
+                <div>
+                    <button class="comprar">Comprar</button>
+                </div>
+            </section>
         </main>
 
-        <footer>
-            <h1>#Conteumahistoria</h1>
-            <small>
-                <span class="material-icons">
-                    copyright
-                </span>
-                <span>2021 Libria</span>
-            </small>
-        </footer>
-
+        <script src="../data/books.js"></script>
+        <script src="../scripts/sacola.js"></script>
         <script src="../scripts/navBar.js"></script>
     </body>
 </html>

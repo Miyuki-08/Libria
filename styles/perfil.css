@@ -1,0 +1,51 @@
+main section {
+  display: flex;
+  flex-direction: column;
+}
+main section > * {
+  font-family: var(--title-font);
+}
+main section:first-child {
+  align-items: center;
+}
+main section:first-child span {
+  font-size: 2rem;
+}
+main section:first-child span:last-child {
+  margin: 1rem 0 3rem;
+}
+main section figure {
+  width: 12rem;
+  height: 12rem;
+  background-color: var(--lilas-300);
+  border-radius: 50%;
+  border: 2px solid var(--lilas-800);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 0;
+}
+main section figure img {
+  width: auto;
+  height: 11rem;
+}
+main section:last-child {
+  margin-left: 10%;
+}
+main section:last-child div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+main section:last-child span {
+  font-size: 1.8rem;
+}
+main section:last-child ul li {
+  margin: 1rem 0;
+}
+main section:last-child ul li a {
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=perfil.css.map */

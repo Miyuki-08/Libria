@@ -44,7 +44,7 @@
                             <div>
                                 <h2>Olá, bem vindo(a)!</h2>
                             
-                                <a href="../pages/login-cadastre.html">
+                                <a href="./pages/login-cadastre.html">
                                     <p>Entre ou Cadastre-se</p>
                                 </a>
                             </div>
@@ -123,8 +123,8 @@
                 </figure>
                 </a>
 
-                <div>
-                    <span class="material-icons" onclick="abrirSacola()">
+                <div class="transparent">
+                    <span class="material-icons" onclick="">
                         shopping_basket
                     </span>
 
@@ -132,7 +132,7 @@
                         <header>
                             <h3>Minha sacola</h3>
 
-                            <span class="material-icons" onclick="fecharSacola()">
+                            <span class="material-icons" onclick="">
                                 close
                             </span>
                         </header>
@@ -152,48 +152,36 @@
         </header>
 
         <section>
-            <ol id="navegacao">
-                <li><a href="#">Dados do responsável</a></li>
+            <ol id="cadastre">
+                <li><a href="../pages/cadastre-se-pague.html">Dados do responsável</a></li>
                 <span>></span>
-                <li><a>Dados da criança</a></li>
+                <li><a href="../pages/cadastre-pague-crianca.html" style="color: #000;">Dados da criança</a></li>
                 <span>></span>
-                <li><a>Detalhes da conta</a></li>
+                <li><a href="../pages/cadastre-pague-senha.html" style="color: #000;">Detalhes da conta</a></li>
+                <span>></span>
+                <li><a href="#" style="color: #000;">Forma de pagamento</a></li>
+
+                
             </ol>
         </section>
 
         <main>
-
-            <h2>Dados do responsável</h2>
+            <h2>Forma de pagamento</h2>
 
             <form action="">
-                <label>Nome do responsável:</label>
+                <label>Número do cartão:</label>
+                <input type="number" required>
+
+                <label>Nome do titular:</label>
                 <input type="text" required>
 
-                <label>Data de nascimento do responsável:</label>
-                <input type="date" required>
+                <label>Validade:</label>
+                <input type="text" required>
 
-                <label>Email do responsável:</label>
-                <input type="email" required>
+                <label>CVV:</label>
+                <input type="text" required>
 
-                <label>Selecione:</label>
-                <div>
-                    <select required>
-                        <option>PcD</option>
-                        <option selected >Sem deficiência</option>
-                    </select>
-    
-                    <!-- SE O SELECT ACIMA FOR IGUAL A PCD OU SE PCD FOR TRUE -->
-                    <select disabled>
-                        <option>Deficiência auditiva</option>
-                        <option>Deficiência visual</option>
-                        <option>Deficiência física</option>
-                        <option>Deficiência cognitiva</option>
-                        <option>Deficiência neural</option>
-                        <option>Deficiência de aprendizagem</option>
-                    </select>
-                </div>
-
-                <a href="../pages/cadastre-crianca.html"> Próximo </a>
+                <a href="../pages/confirmar-compra.html"> Salvar </a>
             </form>
         </main>
 

@@ -9,8 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/global.css">
-        <link rel="stylesheet" href="../styles/login.css">
-        <title>Acesse a Libria</title>
+        <link rel="stylesheet" href="../styles/perfil.css">
+        <title>Meu perfil - Libria</title>
     </head>
     <body>
         <header>
@@ -60,45 +60,33 @@
         </header>
 
         <main>
-            <h1>Seja bem vindo(a)!</h1>
-            <section id="cadastrar">
-                <form action="">
-                    <div>
-                        <input id="input-cadastrar" type="checkbox" onclick="checkCadastrar()">
-                        <h2>Cadastrar-se</h2>
-                    </div>
+            <section>
+                <figure>
+                    <img src="../images/livia-2.png" alt="">
+                </figure>
 
-                    <input type="email" placeholder="Nome do responsável">
-
-                    <a href="../pages/cadastre.html">
-                        Continue
-                    </a>
-                </form>
+                <span>Hector França Casé</span>
+                <span>7 anos</span>
             </section>
 
-            <section id="login" class="login-check">
-                <form action="">
-                    <div>
-                        <input id="input-login" type="checkbox" onclick="checkLogin()" checked>
-                        <h2>Login</h2>
-                    </div>
+            <section>
+                <div>
+                    <span>Nome do responsável:</span>
+                    <span>Vitória Maeda Viera</span>
+                </div>
 
-                    <input type="email" placeholder="Email do responsável">
-                    <input type="password" placeholder="Senha">
+                <div>
+                    <span>Data de nascimento do(a) Hector:</span>
+                    <span>05/04/2021</span>
+                </div>
 
-                    <button>
-                        Entre
-                    </button>
-                </form>
+                <ul>
+                    <li><a href="#">Forma de pagamento</a></li>
+                    <li><a href="../index.html">Sair da conta</a></li>
+                </ul>
             </section>
-
-            <p id="condicoes" class="habilitado">
-                Ao continuar, você concorda com as 
-                <a href="">condições de uso</a>
-                da Libria.
-            </p>
         </main>
 
-        <script src="../scripts/login-cadastrar.js"></script>
+        <script src="../scripts/navBar.js"></script>
     </body>
 </html>

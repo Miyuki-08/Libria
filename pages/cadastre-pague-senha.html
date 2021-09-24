@@ -44,7 +44,7 @@
                             <div>
                                 <h2>Olá, bem vindo(a)!</h2>
                             
-                                <a href="../pages/login-cadastre.html">
+                                <a href="./pages/login-cadastre.html">
                                     <p>Entre ou Cadastre-se</p>
                                 </a>
                             </div>
@@ -123,8 +123,8 @@
                 </figure>
                 </a>
 
-                <div>
-                    <span class="material-icons" onclick="abrirSacola()">
+                <div class="transparent">
+                    <span class="material-icons" onclick="">
                         shopping_basket
                     </span>
 
@@ -132,7 +132,7 @@
                         <header>
                             <h3>Minha sacola</h3>
 
-                            <span class="material-icons" onclick="fecharSacola()">
+                            <span class="material-icons" onclick="">
                                 close
                             </span>
                         </header>
@@ -152,12 +152,14 @@
         </header>
 
         <section>
-            <ol id="navegacao">
-                <li><a href="#">Dados do responsável</a></li>
+            <ol id="cadastre">
+                <li><a href="../pages/cadastre-se-pague.html">Dados do responsável</a></li>
                 <span>></span>
-                <li><a>Dados da criança</a></li>
+                <li><a href="../pages/cadastre-pague-crianca.html" style="color: #000;">Dados da criança</a></li>
                 <span>></span>
-                <li><a>Detalhes da conta</a></li>
+                <li><a href="#" style="color: #000;;">Detalhes da conta</a></li>
+                <span>></span>
+                <li><a>Forma de pagamento</a></li>
             </ol>
         </section>
 
@@ -166,34 +168,23 @@
             <h2>Dados do responsável</h2>
 
             <form action="">
-                <label>Nome do responsável:</label>
-                <input type="text" required>
+                <label>Senha:</label>
+                <input type="password" required>
 
-                <label>Data de nascimento do responsável:</label>
-                <input type="date" required>
+                <label>Confirmar senha:</label>
+                <input type="password" required>
 
-                <label>Email do responsável:</label>
-                <input type="email" required>
-
-                <label>Selecione:</label>
-                <div>
-                    <select required>
-                        <option>PcD</option>
-                        <option selected >Sem deficiência</option>
-                    </select>
-    
-                    <!-- SE O SELECT ACIMA FOR IGUAL A PCD OU SE PCD FOR TRUE -->
-                    <select disabled>
-                        <option>Deficiência auditiva</option>
-                        <option>Deficiência visual</option>
-                        <option>Deficiência física</option>
-                        <option>Deficiência cognitiva</option>
-                        <option>Deficiência neural</option>
-                        <option>Deficiência de aprendizagem</option>
-                    </select>
+                <div class="emails">
+                    <input type="checkbox">
+                    <span>Gostaria de receber emails de promoções</span>
                 </div>
 
-                <a href="../pages/cadastre-crianca.html"> Próximo </a>
+                <div class="termos">
+                    <input type="checkbox">
+                    <a href="#">Aceitos os termos de uso</a>
+                </div>
+
+                <a href="../pages/cadastre-pague.html">Próximo</a>
             </form>
         </main>
 

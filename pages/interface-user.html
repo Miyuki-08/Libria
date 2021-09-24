@@ -9,13 +9,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/global.css">
-        <link rel="stylesheet" href="../styles/cadastre.css">
-        <title>Cadastre-se na Libria!</title>
+        <title>Dashboard - Libria</title>
     </head>
     <body>
         <header>
 
-            <menu >
+            <menu>
                 <ul class="menu-tab">
                     <li>
                         <a href="#">Ir para o menu</a>
@@ -42,10 +41,10 @@
                             </figure>
 
                             <div>
-                                <h2>Olá, bem vindo(a)!</h2>
+                                <h2>Olá, Hector!</h2>
                             
-                                <a href="../pages/login-cadastre.html">
-                                    <p>Entre ou Cadastre-se</p>
+                                <a href="">
+                                    <p>Seja muito bem vindo (a)!</p>
                                 </a>
                             </div>
                             
@@ -56,6 +55,15 @@
 
                         <section>
                             <ul>
+                                <li>
+                                    <a href="">
+                                        <span class="material-icons">
+                                            auto_stories
+                                        </span>
+    
+                                        <p>Meus livros</p>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="">
                                         <span class="material-icons">
@@ -76,6 +84,15 @@
                                 </li>
                             </ul>
                             <ul>
+                                <li>
+                                    <a href="">
+                                        <span class="material-icons">
+                                            receipt_long
+                                        </span>
+
+                                        <p>Histórico de compras</p>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="">
                                         <span class="material-icons">
@@ -123,8 +140,8 @@
                 </figure>
                 </a>
 
-                <div>
-                    <span class="material-icons" onclick="abrirSacola()">
+                <div class="transparent">
+                    <span class="material-icons" onclick="">
                         shopping_basket
                     </span>
 
@@ -132,7 +149,7 @@
                         <header>
                             <h3>Minha sacola</h3>
 
-                            <span class="material-icons" onclick="fecharSacola()">
+                            <span class="material-icons" onclick="">
                                 close
                             </span>
                         </header>
@@ -150,62 +167,6 @@
             </nav>
 
         </header>
-
-        <section>
-            <ol id="navegacao">
-                <li><a href="#">Dados do responsável</a></li>
-                <span>></span>
-                <li><a>Dados da criança</a></li>
-                <span>></span>
-                <li><a>Detalhes da conta</a></li>
-            </ol>
-        </section>
-
-        <main>
-
-            <h2>Dados do responsável</h2>
-
-            <form action="">
-                <label>Nome do responsável:</label>
-                <input type="text" required>
-
-                <label>Data de nascimento do responsável:</label>
-                <input type="date" required>
-
-                <label>Email do responsável:</label>
-                <input type="email" required>
-
-                <label>Selecione:</label>
-                <div>
-                    <select required>
-                        <option>PcD</option>
-                        <option selected >Sem deficiência</option>
-                    </select>
-    
-                    <!-- SE O SELECT ACIMA FOR IGUAL A PCD OU SE PCD FOR TRUE -->
-                    <select disabled>
-                        <option>Deficiência auditiva</option>
-                        <option>Deficiência visual</option>
-                        <option>Deficiência física</option>
-                        <option>Deficiência cognitiva</option>
-                        <option>Deficiência neural</option>
-                        <option>Deficiência de aprendizagem</option>
-                    </select>
-                </div>
-
-                <a href="../pages/cadastre-crianca.html"> Próximo </a>
-            </form>
-        </main>
-
-        <footer>
-            <h1>#Conteumahistoria</h1>
-            <small>
-                <span class="material-icons">
-                    copyright
-                </span>
-                <span>2021 Libria</span>
-            </small>
-        </footer>
 
         <script src="../scripts/navBar.js"></script>
     </body>

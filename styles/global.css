@@ -106,6 +106,12 @@ nav a figure svg {
   height: 8vh;
   margin: 1vh 0;
 }
+nav .transparent {
+  background-color: transparent;
+}
+nav .transparent span {
+  color: transparent;
+}
 
 #nav-login {
   display: block;
@@ -264,42 +270,43 @@ nav a figure svg {
   text-align: center;
   margin: 1vh 1rem;
 }
-#sacola section.cheia > div {
+
+section.cheia > div {
   width: 80%;
   margin: 0 10%;
 }
-#sacola section.cheia .produtos {
+section.cheia .produtos {
   margin-top: 2rem;
   background-color: var(--white);
   border-radius: 10px;
 }
-#sacola section.cheia .produtos hr {
+section.cheia .produtos hr {
   width: 80%;
   height: 2px;
   background-color: var(--lilas-300);
   margin: 0 10% 2rem;
 }
-#sacola section.cheia #produtoUm, #sacola section.cheia #produtoDois {
+section.cheia #produtoUm, section.cheia #produtoDois {
   position: relative;
   padding-bottom: 3rem;
 }
-#sacola section.cheia #produtoUm > div, #sacola section.cheia #produtoDois > div {
+section.cheia #produtoUm > div, section.cheia #produtoDois > div {
   width: 100%;
   display: flex;
   align-items: center;
   padding: 0 3rem;
 }
-#sacola section.cheia #produtoUm > div img, #sacola section.cheia #produtoDois > div img {
+section.cheia #produtoUm > div img, section.cheia #produtoDois > div img {
   width: 20%;
   height: auto;
   margin-top: 2rem;
 }
-#sacola section.cheia #produtoUm > div h4, #sacola section.cheia #produtoDois > div h4 {
+section.cheia #produtoUm > div h4, section.cheia #produtoDois > div h4 {
   font-family: var(--title-font);
   font-size: 2rem;
   padding-left: 4rem;
 }
-#sacola section.cheia #produtoUm > div button, #sacola section.cheia #produtoDois > div button {
+section.cheia #produtoUm > div button, section.cheia #produtoDois > div button {
   width: 3rem;
   height: 3rem;
   display: flex;
@@ -311,20 +318,20 @@ nav a figure svg {
   top: 10%;
   right: 3%;
 }
-#sacola section.cheia #produtoUm > div button span, #sacola section.cheia #produtoDois > div button span {
+section.cheia #produtoUm > div button span, section.cheia #produtoDois > div button span {
   font-size: 2rem;
 }
-#sacola section.cheia #produtoUm > div > div, #sacola section.cheia #produtoDois > div > div {
+section.cheia #produtoUm > div > div, section.cheia #produtoDois > div > div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#sacola section.cheia #produtoUm > div > div > p, #sacola section.cheia #produtoDois > div > div > p {
+section.cheia #produtoUm > div > div > p, section.cheia #produtoDois > div > div > p {
   font-family: var(--title-font);
   font-size: 1.6rem;
   margin-top: 1rem;
 }
-#sacola section.cheia #produtoUm > div > div input, #sacola section.cheia #produtoDois > div > div input {
+section.cheia #produtoUm > div > div input, section.cheia #produtoDois > div > div input {
   width: 2rem;
   height: 2rem;
   font-size: 2rem;
@@ -332,46 +339,54 @@ nav a figure svg {
   padding-top: 1rem;
   color: var(--black);
 }
-#sacola section.cheia #produtoUm > div > div > div, #sacola section.cheia #produtoDois > div > div > div {
+section.cheia #produtoUm > div > div > div, section.cheia #produtoDois > div > div > div {
   display: flex;
   align-items: center;
   padding-left: 1rem;
 }
-#sacola section.cheia #produtoUm > div:nth-of-type(2), #sacola section.cheia #produtoDois > div:nth-of-type(2) {
+section.cheia #produtoUm > div .historico, section.cheia #produtoDois > div .historico {
+  align-items: flex-start;
+}
+section.cheia #produtoUm > div .historico > span, section.cheia #produtoDois > div .historico > span {
+  font-family: var(--title-font);
+  font-size: 1.6rem;
+}
+section.cheia #produtoUm > div:nth-of-type(2), section.cheia #produtoDois > div:nth-of-type(2) {
   justify-content: space-between;
 }
-#sacola section.cheia #produtoUm > div:nth-of-type(2) > p, #sacola section.cheia #produtoDois > div:nth-of-type(2) > p {
+section.cheia #produtoUm > div:nth-of-type(2) > p, section.cheia #produtoDois > div:nth-of-type(2) > p {
   font-family: var(--title-font);
   font-size: 2rem;
   color: var(--lilas-800);
 }
-#sacola section.cheia > div:not(.produtos) {
+section.cheia > div:not(.produtos) {
   display: flex;
 }
-#sacola section.cheia > div:nth-of-type(2) {
+section.cheia > div:nth-of-type(2) {
   background-color: var(--white);
   border-radius: 10px;
   padding: 2rem 3rem;
   margin-top: 2rem;
 }
-#sacola section.cheia > div:nth-of-type(2) p {
+section.cheia > div:nth-of-type(2) p {
   font-family: var(--title-font);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  align-self: center;
 }
-#sacola section.cheia > div:nth-of-type(2) p:first-child {
+section.cheia > div:nth-of-type(2) p:first-child {
   margin-right: 1rem;
 }
-#sacola section.cheia > div:nth-of-type(2) p:last-child {
+section.cheia > div:nth-of-type(2) p:last-child {
   font-weight: bold;
   font-size: 2rem;
   color: var(--lilas-800);
   margin-left: 20%;
 }
-#sacola section.cheia > div:last-child {
+section.cheia > div:last-child {
   flex-direction: column;
   margin-top: 2rem;
 }
-#sacola section.cheia > div:last-child button {
+section.cheia > div:last-child button {
   width: 80%;
   font-family: var(--title-font);
   font-size: 2rem;
@@ -380,7 +395,10 @@ nav a figure svg {
   padding: 1rem 0;
   margin: 0 10%;
 }
-#sacola section.cheia > div:last-child a {
+section.cheia > div:last-child .comprar {
+  margin-bottom: 3rem;
+}
+section.cheia > div:last-child a {
   font-family: var(--title-font);
   font-size: 1.6rem;
   text-decoration: underline;

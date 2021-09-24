@@ -35,6 +35,8 @@ main > div:first-child button#share {
 main section {
   width: 100%;
   padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
 }
 main section h1 {
   font-family: var(--title-font);
@@ -48,17 +50,18 @@ main section p {
   font-size: 2rem;
   margin: 2.5rem 0 2rem;
 }
-main section button {
-  width: 100%;
-  height: 4rem;
+main section a {
+  color: var(--black);
   border-radius: 10px;
   font-family: var(--title-font);
   font-size: 2rem;
+  text-align: center;
+  padding: 1.2rem;
 }
-main section button:first-child {
+main section a:first-child {
   background-color: var(--lilas-500);
 }
-main section button:last-child {
+main section a:last-child {
   background-color: var(--white);
   border: 2px solid var(--lilas-500);
   margin: 1.5rem 0 3rem;

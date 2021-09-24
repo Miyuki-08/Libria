@@ -4,7 +4,6 @@ section {
 }
 section ol {
   display: grid;
-  grid-template-columns: 30% 5% 30% 5% 30%;
 }
 section ol li {
   text-align: center;
@@ -13,10 +12,11 @@ section ol li {
 section ol li:first-child, section ol li:last-child {
   width: 100%;
 }
-section ol li:nth-of-type(2) a, section ol li:last-child a {
+section ol li:nth-of-type(2) a, section ol li:nth-of-type(3) a, section ol li:last-child a {
   color: #7b7b7b;
 }
 section ol li a {
+  width: 100%;
   font-family: var(--title-font);
   font-size: 1.6rem;
   color: var(--black);
@@ -27,6 +27,15 @@ section ol span {
   font-family: var(--title-font);
   font-size: 2rem;
   font-weight: bold;
+}
+section #cadastre {
+  grid-template-columns: 21.25% 5% 21.25% 5% 21.25% 5% 21.25%;
+}
+section #cadastre a {
+  font-size: 1rem;
+}
+section #navegacao {
+  grid-template-columns: 30% 5% 30% 5% 30%;
 }
 
 main {
@@ -68,11 +77,16 @@ main form > div {
   display: flex;
   justify-content: space-around;
 }
+main form > div select {
+  background-color: var(--lilas-500);
+  border-radius: 3px;
+}
 main form > div select:first-child {
   width: 40%;
 }
 main form > div select:last-child {
   width: 45%;
+  color: var(--black);
   margin-left: 7%;
 }
 main form .emails, main form .termos {
