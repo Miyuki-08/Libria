@@ -19,6 +19,7 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: #F7F5F8;
   overflow-x: hidden;
 }

@@ -75,7 +75,7 @@ main form > input {
 }
 main form > div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 main form > div select {
   background-color: var(--lilas-500);
@@ -83,6 +83,7 @@ main form > div select {
 }
 main form > div select:first-child {
   width: 40%;
+  height: 3rem;
 }
 main form > div select:last-child {
   width: 45%;
